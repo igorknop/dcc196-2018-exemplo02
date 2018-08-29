@@ -14,7 +14,7 @@ public class ProfessorActivity extends AppCompatActivity {
         txtProfMensagem = findViewById(R.id.txt_prof_mensagem);
         Bundle extras = getIntent().getExtras();
         if(extras != null){
-            String nome = extras.getString("nome");
+            String nome = extras.getString(MainActivity.PESSOA_NOME);
             txtProfMensagem.setText("Olá prof. "+nome+"!");
         }
     }
